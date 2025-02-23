@@ -1,0 +1,37 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>web</groupId>
+  <artifactId>webatuomate</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>webatuomate</name>
+  <description>dsfdsgfjfdfdgfgdf</description>
+  
+  <dependencies>
+    <!-- Selenium WebDriver Dependency -->
+  
+    <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+
+    <!-- WebDriver Manager Dependency (Optional) -->
+    <dependency>
+        <groupId>io.github.bonigarcia</groupId>
+        <artifactId>webdrivermanager</artifactId>
+        <version>5.8.0</version>  <!-- Automatically manages browser drivers -->
+    </dependency>
+</dependencies>
+
+<build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.2</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>/webatuomate/test-output/testng-results.xmll</suiteXmlFile> <!-- Default TestNG XML -->
+                    </suiteXmlFiles>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
